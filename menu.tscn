@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm25fxs5kanqh"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_qmvlw"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qmvlw")
+
+[node name="Blackjack" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.1
+anchor_right = 0.75
+anchor_bottom = 0.3
+offset_top = 300.0
+offset_right = -6.10352e-05
+offset_bottom = 200.0
+text = "Blackjack"
+
+[node name="Tic Tac Toe" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.1
+anchor_right = 0.75
+anchor_bottom = 0.3
+offset_top = 450.0
+offset_right = -6.10352e-05
+offset_bottom = 350.0
+text = "Tic Tac Toe"
+
+[node name="Word Master" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.1
+anchor_right = 0.75
+anchor_bottom = 0.3
+offset_top = 600.0
+offset_right = -6.10352e-05
+offset_bottom = 500.0
+text = "Word Master"
+
+[node name="Solitaire" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.1
+anchor_right = 0.75
+anchor_bottom = 0.3
+offset_top = 750.0
+offset_right = -6.10352e-05
+offset_bottom = 650.0
+text = "Solitaire"
+
+[connection signal="pressed" from="Blackjack" to="." method="playBlackjack"]
+[connection signal="pressed" from="Tic Tac Toe" to="." method="playTicTacToe"]
+[connection signal="pressed" from="Word Master" to="." method="playWordMaster"]
+[connection signal="pressed" from="Solitaire" to="." method="playSolitaire"]

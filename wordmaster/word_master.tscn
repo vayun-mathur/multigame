@@ -1,0 +1,764 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqnvhd6xj1iyj"]
+
+[ext_resource type="Script" path="res://wordmaster/word_master.gd" id="1_jt783"]
+[ext_resource type="Script" path="res://wordmaster/Keyboard.gd" id="2_gqdv4"]
+[ext_resource type="Texture2D" uid="uid://cr15n06y5vbf8" path="res://back.svg" id="3_7mrhk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52usx"]
+
+[node name="WordMaster" type="Node2D"]
+script = ExtResource("1_jt783")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 250.0
+offset_top = 100.0
+offset_right = 750.0
+offset_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 5
+
+[node name="char0" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char0"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char1" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char1"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char2" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char2"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char3" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char3"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char4" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char4"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char5" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char5"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char6" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char6"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char7" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char7"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char8" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char8"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char9" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char9"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char10" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char10"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char11" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char11"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char12" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char12"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char13" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char13"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char14" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char14"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char15" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char15"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char16" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char16"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char17" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char17"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char18" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char18"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char19" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char19"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char20" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char20"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char21" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char21"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char22" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char22"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char23" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char23"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char24" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char24"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char25" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char25"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char26" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char26"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char27" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char27"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char28" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char28"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="char29" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/char29"]
+z_index = -1
+position = Vector2(0, -15)
+scale = Vector2(1, 1.08)
+color = Color(0.140447, 0.140447, 0.140447, 1)
+polygon = PackedVector2Array(10, 0, 10, 50, 90, 50, 90, 0)
+
+[node name="Keyboard" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 500.0
+offset_top = 700.0
+offset_right = 540.0
+offset_bottom = 740.0
+script = ExtResource("2_gqdv4")
+
+[node name="Row1" type="Control" parent="Keyboard"]
+anchors_preset = 0
+offset_left = 12.5
+offset_right = 52.5
+offset_bottom = 40.0
+
+[node name="Y" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 75.0
+text = "Y"
+
+[node name="T" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = -75.0
+offset_right = -25.0
+offset_bottom = 75.0
+text = "T"
+
+[node name="R" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = -150.0
+offset_right = -100.0
+offset_bottom = 75.0
+text = "R"
+
+[node name="E" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = -225.0
+offset_right = -175.0
+offset_bottom = 75.0
+text = "E"
+
+[node name="U" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 125.0
+offset_bottom = 75.0
+text = "U"
+
+[node name="I" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = 150.0
+offset_right = 200.0
+offset_bottom = 75.0
+text = "I"
+
+[node name="O" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 275.0
+offset_bottom = 75.0
+text = "O"
+
+[node name="W" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = -300.0
+offset_right = -250.0
+offset_bottom = 75.0
+text = "W"
+
+[node name="Q" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = -375.0
+offset_right = -325.0
+offset_bottom = 75.0
+text = "Q"
+
+[node name="P" type="Button" parent="Keyboard/Row1"]
+layout_mode = 0
+offset_left = 300.0
+offset_right = 350.0
+offset_bottom = 75.0
+text = "P"
+
+[node name="Row2" type="Control" parent="Keyboard"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 52.5
+offset_top = 100.0
+offset_right = 92.5
+offset_bottom = 140.0
+
+[node name="H" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 75.0
+text = "H"
+
+[node name="G" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = -75.0
+offset_right = -25.0
+offset_bottom = 75.0
+text = "G"
+
+[node name="F" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = -150.0
+offset_right = -100.0
+offset_bottom = 75.0
+text = "F"
+
+[node name="D" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = -225.0
+offset_right = -175.0
+offset_bottom = 75.0
+text = "D"
+
+[node name="J" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 125.0
+offset_bottom = 75.0
+text = "J"
+
+[node name="K" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = 150.0
+offset_right = 200.0
+offset_bottom = 75.0
+text = "K"
+
+[node name="L" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 275.0
+offset_bottom = 75.0
+text = "L"
+
+[node name="S" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = -300.0
+offset_right = -250.0
+offset_bottom = 75.0
+text = "S"
+
+[node name="A" type="Button" parent="Keyboard/Row2"]
+layout_mode = 0
+offset_left = -375.0
+offset_right = -325.0
+offset_bottom = 75.0
+text = "A"
+
+[node name="Row3" type="Control" parent="Keyboard"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 52.5
+offset_top = 200.0
+offset_right = 92.5
+offset_bottom = 240.0
+
+[node name="B" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 75.0
+text = "B"
+
+[node name="V" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = -75.0
+offset_right = -25.0
+offset_bottom = 75.0
+text = "V"
+
+[node name="C" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = -150.0
+offset_right = -100.0
+offset_bottom = 75.0
+text = "C"
+
+[node name="X" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = -225.0
+offset_right = -175.0
+offset_bottom = 75.0
+text = "X"
+
+[node name="N" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 125.0
+offset_bottom = 75.0
+text = "N"
+
+[node name="M" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = 150.0
+offset_right = 200.0
+offset_bottom = 75.0
+text = "M"
+
+[node name="backspace" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 312.5
+offset_bottom = 75.0
+text = "⌫"
+
+[node name="Z" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = -300.0
+offset_right = -250.0
+offset_bottom = 75.0
+text = "Z"
+
+[node name="enter" type="Button" parent="Keyboard/Row3"]
+layout_mode = 0
+offset_left = -412.5
+offset_right = -325.0
+offset_bottom = 75.0
+text = "ENTER"
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2(50, 50)
+
+[node name="Sprite2D" type="Sprite2D" parent="Exit"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_7mrhk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+scale = Vector2(3.2, 3.2)
+shape = SubResource("RectangleShape2D_52usx")
+
+[connection signal="pressed" from="Keyboard/Row1/Y" to="Keyboard" method="Y"]
+[connection signal="pressed" from="Keyboard/Row1/T" to="Keyboard" method="T"]
+[connection signal="pressed" from="Keyboard/Row1/R" to="Keyboard" method="R"]
+[connection signal="pressed" from="Keyboard/Row1/E" to="Keyboard" method="E"]
+[connection signal="pressed" from="Keyboard/Row1/U" to="Keyboard" method="U"]
+[connection signal="pressed" from="Keyboard/Row1/I" to="Keyboard" method="I"]
+[connection signal="pressed" from="Keyboard/Row1/O" to="Keyboard" method="O"]
+[connection signal="pressed" from="Keyboard/Row1/W" to="Keyboard" method="W"]
+[connection signal="pressed" from="Keyboard/Row1/Q" to="Keyboard" method="Q"]
+[connection signal="pressed" from="Keyboard/Row1/P" to="Keyboard" method="P"]
+[connection signal="pressed" from="Keyboard/Row2/H" to="Keyboard" method="H"]
+[connection signal="pressed" from="Keyboard/Row2/G" to="Keyboard" method="G"]
+[connection signal="pressed" from="Keyboard/Row2/F" to="Keyboard" method="F"]
+[connection signal="pressed" from="Keyboard/Row2/D" to="Keyboard" method="D"]
+[connection signal="pressed" from="Keyboard/Row2/J" to="Keyboard" method="J"]
+[connection signal="pressed" from="Keyboard/Row2/K" to="Keyboard" method="K"]
+[connection signal="pressed" from="Keyboard/Row2/L" to="Keyboard" method="L"]
+[connection signal="pressed" from="Keyboard/Row2/S" to="Keyboard" method="S"]
+[connection signal="pressed" from="Keyboard/Row2/A" to="Keyboard" method="A"]
+[connection signal="pressed" from="Keyboard/Row3/B" to="Keyboard" method="B"]
+[connection signal="pressed" from="Keyboard/Row3/V" to="Keyboard" method="V"]
+[connection signal="pressed" from="Keyboard/Row3/C" to="Keyboard" method="C"]
+[connection signal="pressed" from="Keyboard/Row3/X" to="Keyboard" method="X"]
+[connection signal="pressed" from="Keyboard/Row3/N" to="Keyboard" method="N"]
+[connection signal="pressed" from="Keyboard/Row3/M" to="Keyboard" method="M"]
+[connection signal="pressed" from="Keyboard/Row3/backspace" to="Keyboard" method="backspace"]
+[connection signal="pressed" from="Keyboard/Row3/Z" to="Keyboard" method="Z"]
+[connection signal="pressed" from="Keyboard/Row3/enter" to="Keyboard" method="enter"]
+[connection signal="input_event" from="Exit" to="." method="back"]

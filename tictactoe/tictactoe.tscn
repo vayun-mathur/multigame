@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh8og50snmkqb"]
+
+[ext_resource type="Script" path="res://tictactoe/tictactoe.gd" id="1_l7s17"]
+[ext_resource type="Texture2D" uid="uid://dnvc8bl4o106x" path="res://tictactoe/X.svg" id="2_4ihfc"]
+
+[node name="tictactoe" type="Node2D"]
+script = ExtResource("1_l7s17")
+
+[node name="Board" type="Node2D" parent="."]
+position = Vector2(0, 100)
+
+[node name="V1" type="Line2D" parent="Board"]
+points = PackedVector2Array(400, 200, 400, 800)
+
+[node name="V2" type="Line2D" parent="Board"]
+points = PackedVector2Array(600, 200, 600, 800)
+
+[node name="H1" type="Line2D" parent="Board"]
+points = PackedVector2Array(200, 400, 800, 400)
+
+[node name="H2" type="Line2D" parent="Board"]
+points = PackedVector2Array(200, 600, 800, 600)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 200.0
+offset_top = 300.0
+offset_right = 800.0
+offset_bottom = 900.0
+columns = 3
+
+[node name="grid00" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid01" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid02" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid10" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid11" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid12" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid20" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid21" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="grid22" type="Button" parent="GridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="currentPlayer" type="Sprite2D" parent="."]
+position = Vector2(500, 150)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_4ihfc")
+
+[connection signal="pressed" from="GridContainer/grid00" to="." method="grid00"]
+[connection signal="pressed" from="GridContainer/grid01" to="." method="grid01"]
+[connection signal="pressed" from="GridContainer/grid02" to="." method="grid02"]
+[connection signal="pressed" from="GridContainer/grid10" to="." method="grid10"]
+[connection signal="pressed" from="GridContainer/grid11" to="." method="grid11"]
+[connection signal="pressed" from="GridContainer/grid12" to="." method="grid12"]
+[connection signal="pressed" from="GridContainer/grid20" to="." method="grid20"]
+[connection signal="pressed" from="GridContainer/grid21" to="." method="grid21"]
+[connection signal="pressed" from="GridContainer/grid22" to="." method="grid22"]

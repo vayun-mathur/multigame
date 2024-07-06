@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu0s5rkl7tcf4"]
+
+[ext_resource type="Texture2D" uid="uid://vsl80btyuefm" path="res://deck/card back/card_back.png" id="1_hjygv"]
+[ext_resource type="Script" path="res://solitaire/solitaire.gd" id="1_qi3wn"]
+[ext_resource type="Texture2D" uid="uid://5mv1l5mk2exo" path="res://solitaire/card-slot.svg" id="2_idjrj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n55o3"]
+size = Vector2(101, 139)
+
+[node name="Solitaire" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qi3wn")
+
+[node name="stack1" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(450, 100)
+texture = ExtResource("2_idjrj")
+
+[node name="stack2" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(600, 100)
+texture = ExtResource("2_idjrj")
+
+[node name="stack3" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(750, 100)
+texture = ExtResource("2_idjrj")
+
+[node name="stack4" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(900, 100)
+texture = ExtResource("2_idjrj")
+
+[node name="DragPreview" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(100, 100)
+
+[node name="deck" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_hjygv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_n55o3")
+
+[connection signal="input_event" from="Area2D" to="." method="onDeckInput"]

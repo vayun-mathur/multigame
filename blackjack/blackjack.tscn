@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3dsm2at6qs7p"]
+
+[ext_resource type="Script" path="res://blackjack/blackjack.gd" id="1_3k1e8"]
+[ext_resource type="Texture2D" uid="uid://vsl80btyuefm" path="res://deck/card back/card_back.png" id="1_pwpvx"]
+[ext_resource type="Texture2D" uid="uid://cr15n06y5vbf8" path="res://back.svg" id="3_285ky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43gn1"]
+
+[node name="blackjack" type="Node2D"]
+script = ExtResource("1_3k1e8")
+
+[node name="deck" type="Sprite2D" parent="."]
+position = Vector2(177, 93)
+texture = ExtResource("1_pwpvx")
+
+[node name="DealerLabel" type="RichTextLabel" parent="."]
+offset_left = 151.0
+offset_top = 267.0
+offset_right = 270.0
+offset_bottom = 295.0
+text = "Dealer"
+
+[node name="PlayerLabel" type="RichTextLabel" parent="."]
+offset_left = 158.0
+offset_top = 436.0
+offset_right = 248.0
+offset_bottom = 464.0
+text = "You"
+
+[node name="HitButton" type="Button" parent="."]
+offset_left = 238.0
+offset_top = 553.0
+offset_right = 427.0
+offset_bottom = 617.0
+text = "Hit"
+
+[node name="StandButton" type="Button" parent="."]
+offset_left = 484.0
+offset_top = 553.0
+offset_right = 673.0
+offset_bottom = 617.0
+text = "Stand"
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2(50, 50)
+
+[node name="Sprite2D" type="Sprite2D" parent="Exit"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_285ky")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+scale = Vector2(3.2, 3.2)
+shape = SubResource("RectangleShape2D_43gn1")
+
+[connection signal="pressed" from="HitButton" to="." method="hit"]
+[connection signal="pressed" from="StandButton" to="." method="stand"]
+[connection signal="input_event" from="Exit" to="." method="back"]
